@@ -116,7 +116,7 @@
 			  	transform: translate(-50%, -50%);
 			  	margin: 0;
 			  	padding: 0;
-			  	font-size: 2rem;
+			  	font-size: 1.5rem;
 			}
 
 			/* parallax efekt kikapcsolása */
@@ -143,6 +143,21 @@
 				color: #fff;
 				font-size: 8rem;
 				font-family: 'Italianno', cursive;
+			}
+			@media only screen and (max-device-width: 1366px){
+				.box .h4 {
+					font-size: 5rem;
+					line-height: 5rem;
+				}
+				.parallax p {
+					font-size: 1rem;
+				}
+			}
+			@media only screen and (max-device-width: 768px){
+				.box .h4 {
+					font-size: 3rem;
+					line-height: 3rem;
+				}
 			}
 
 			/* GÖRGETÉS */
@@ -327,6 +342,7 @@
 			/* SECTION 5 */
 			#section5 {
 				background: #fd9d2d;
+				padding-bottom: 0;
 			}
 			.kuldes a {
 				color: #fff;
@@ -338,7 +354,9 @@
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 			}
 			.kuldes a:hover {
-				transform: scale(1.05);
+				-webkit-transform: scale(1.1);
+				-webkit-transition: .5s;
+				transform: scale(1.1);
 				transition: .5s;
 				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 			}
@@ -352,10 +370,16 @@
 				color: #000; 
 				text-decoration: none;
 			}
+			@media only screen and (max-device-width: 768px){
+				.table a {
+					font-size: .5rem;
+				}
+			}
 
 			/* footer */
 			#contact {
 				background: #575564;
+				padding-bottom: 10px;
 			}
 
 			ion-icon:hover {
@@ -436,7 +460,7 @@
 			<!-- NAVBAR VÉGE -->
 
 	    	<!-- SZÖVEG DOBOZ - FŐOLDAL -->
-			<div class="box">
+			<div class="container box">
 
 				<h4 class="h4">Bánhegyi Roland</h4>
 				<h4 class="h4">méztermelő</h4>
@@ -654,46 +678,37 @@
 			
 			<h2 class="h2 gray">Elérhetőségeim</h2>
 
-			<div class="row text-center">
+			<div class="row text-center" style="padding-top: 2%; padding-bottom: 2%; margin-bottom: 50px">
 
 				<div class="col-10 col-md-3 mx-auto">
-					<p>Címem:</p>
-					<p>Mecseknádasd, Petőfi u. 76.</p>
-					<div class="kuldes">
-						<a class="mx-auto" href="https://uj.utvonalterv.hu/#!l=0,1!p=14/46.2200/18.4701">Kattints az útvonal tervezéshez!</a>
-					</div>
-				</div>
-				<div class="col-10 col-md-3 mx-auto">
-					<p>Email:</p>
+					<p style="padding: 10px; margin-top: 20px">Email:</p>
 					<p>banhegyi@gmail.com</p>
-					<div class="kuldes">
-						<a class="mx-auto" href="mailto:banhegyi@gmail.com">Kattints az üzenet küldéshez!</a>
+					<div class="kuldes" style="height: 75%; padding-top: 5%">
+						<a class="mx-auto" href="mailto:banhegyi@gmail.com">Üzenet küldés!</a>
 					</div>
 				</div>
 				<div class="col-10 col-md-3 mx-auto">
-					<p>Telefonszámom:</p>
+					<p style="padding: 10px; margin-top: 20px">Telefonszámom:</p>
 					<p>+36-70/123-4567</p>
-					<div class="kuldes">
-						<a class="mx-auto" href="tel: +36 70 123 4567">Kattints a telefonhíváshoz!</a>
+					<div class="kuldes" style="height: 75%; padding-top: 5%">
+						<a class="mx-auto" href="tel: +36 70 123 4567">Hívás!</a>
 					</div>
 				</div>
-
+				<div class="col-10 col-md-3 mx-auto">
+					<p style="padding: 10px; margin-top: 20px">Címem:</p>
+					<p>Mecseknádasd, Petőfi u. 76.</p>
+					<div class="kuldes" style="height: 75%; padding-top: 5%">
+						<a class="mx-auto" href="https://www.google.com/maps/place/Mecsekn%C3%A1dasd,+7695/@46.2376899,18.4092741,12z/data=!3m1!4b1!4m5!3m4!1s0x4742bfc2498027a3:0x400c4290c1e4740!8m2!3d46.22466!4d18.4653855">Útvonaltervezés!</a>
+					</div>
+				</div>
 			</div>
 
-			<div class="row text-center">
-
-				
-
-				
-				
-			</div>
-
-			<div class="table-responsive" style="height: 10%; margin-top: 2%;">
-				<table class="table table-borderless">
+			<div class="container-fluid">
+				<table class="table">
 						<tr>
-							<td><a href="https://www.xn--adatvdelem-f7a.hu/jogszabalyok/">Adatvédelmi tájékoztató!</a></td>
-							<td><a href="#">Vásárlási információk!</a></td>
-							<td><a href="https://www.posta.hu/kuldemeny_kuldese/mpl_postacsomag">Szállítási információk!</a></td>
+							<td><a style="padding: 20px; margin-bottom: 0" href="https://www.xn--adatvdelem-f7a.hu/jogszabalyok/">Adatvédelmi tájékoztató!</a></td>
+							<td><a style="padding: 20px; margin-bottom: 0" href="#">Vásárlási információk!</a></td>
+							<td><a style="padding: 20px; margin-bottom: 0" href="https://www.posta.hu/kuldemeny_kuldese/mpl_postacsomag">Szállítási információk!</a></td>
 						</tr>
 				</table>
 			</div>
