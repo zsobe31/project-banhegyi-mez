@@ -198,7 +198,7 @@ body, html {
 	transition: 0.6s ease;
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 }
-.cim {
+.cim1 {
 	margin-top: 2%;
 	color: black;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
@@ -370,7 +370,7 @@ body, html {
 	padding-bottom: 2%; 
 	margin-bottom: 50px
 }
-.cim {
+.cim2 {
 	padding: 10px; 
 	margin-top: 20px
 }
