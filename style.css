@@ -188,17 +188,17 @@ body, html {
 #section3 p {
 	text-align: justify;
 }
-.kep3 {
+#section3 .kep3 {
 	width: 45%;
 	border-radius: 10px; 
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
-.kep3:hover {
+#section3 .kep3:hover {
 	-webkit-transform: scale(1.01);
 	transition: 0.6s ease;
 	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 25px 0 rgba(0, 0, 0, 0.19);
 }
-.cim1 {
+#section3 .cim1 {
 	margin-top: 2%;
 	color: black;
     -webkit-animation-name: example; /* Safari 4.0 - 8.0 */
@@ -220,10 +220,10 @@ body, html {
     50% {color: white;}
     100% {color: black;}
 }
-.slides img {
+#section3 .slides img {
 	width: 100%;
 }
-.modal {
+#section3 .modal {
 		display: none;
 		position: fixed;
 		z-index: 1;
@@ -235,7 +235,7 @@ body, html {
 		overflow: auto;
 		background-color: #000;
 }
-.modal-content {
+#section3 .modal-content {
   	position: relative;
   	background-color: #fefefe;
   	margin: auto;
@@ -243,7 +243,7 @@ body, html {
   	width: 50%;
   	max-width: 1200px;
 }
-.close {
+#section3 .close {
   	color: #fff;
   	position: absolute;
   	top: 10px;
@@ -251,16 +251,16 @@ body, html {
   	font-size: 35px;
   	font-weight: bold;
 }
-.close:hover,
-.close:focus {
+#section3 .close:hover,
+#section3 .close:focus {
   	color: #999;
   	text-decoration: none;
   	cursor: pointer;
 }
-.slides {
+#section3 .slides {
   	display: none;
 }
-.text {
+#section3 .text {
 		color: #fcb413;
 		font-size: 15px;
 		padding: 8px 12px;
@@ -268,15 +268,15 @@ body, html {
 		width: 100%;
 		text-align: center;
 }
-.text p {
+#section3 .text p {
 	color: #fff;
 	text-align: justify;
 }
-.cursor {
+#section3 .cursor {
   	cursor: pointer;
 }
-.prev,
-.next {
+#section3 .prev,
+#section3 .next {
   	cursor: pointer;
   	position: absolute;
   	top: 50%;
@@ -291,19 +291,19 @@ body, html {
   	user-select: none;
   	-webkit-user-select: none;
 }
-.next {
+#section3 .next {
   	right: 0;
   	border-radius: 3px 0 0 3px;
 }
-.prev:hover,
-.next:hover {
+#section3 .prev:hover,
+#section3 .next:hover {
  	background-color: rgba(0, 0, 0, 0.8);
 }
-.demo {
+#section3 .demo {
   	opacity: 0.6;
 }
-.active,
-.demo:hover {
+#section3 .active,
+#section3 .demo:hover {
   	opacity: 1;
 }
 

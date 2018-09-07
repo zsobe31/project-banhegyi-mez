@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Bánhegyi Roland méztermelő</title>
+		<meta charset="utf-8">
+
+		<!-- KERESŐMOTOR OPTIMALIZÁLÁS -->
+		<meta name="author" content="banhegyi-mez.hu" />		
+		<meta name="description" content="meztermelo, mehesz, Mecseknadasd" />
+		<meta name="robots" content="index, follow" />
+		<meta name="keywords" content="meztermelo, mehesz, Mecseknadasd" />
+		<meta name="classification" content="meztermelo, mehesz, Mecseknadasd" />		
+		<meta name="subject" content="meztermelo, mehesz, Mecseknadasd" />
+		<meta name="revisit-after" content="5 days" />
+
+		<!-- ALL SCREEN VIEW -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- FAVICON ADD -->
+		<link rel="icon" href="meh-2.png" type="image/gif" sizes="16x16">
+
+		<!-- ADD ICON-FAMILY -->
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+		<script src="https://unpkg.com/ionicons@4.2.4/dist/ionicons.js"></script>
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+		<!-- FONT-FAMILY ADD -->
+		<link href="https://fonts.googleapis.com/css?family=Raleway:300" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Italianno" rel="stylesheet">
+
+		<!-- BOOTSTRAP 4 ADD -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+		<!-- ADD SCRIPT -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+		<style type="text/css">
+
+			/* GENERAL */
+			body, html {
+				height: 100%;
+				padding: 0;
+				margin: 0;
+			  	font-family: 'Raleway', sans-serif;
+			  	font-size: 1rem;
+			  	box-sizing: border-box;
+			}
+			/* H2 TAG AFTER LINE */
+			.black:after {
+				display: block;
+			    height: 2px;
+			    background-color: black;
+			    content: " ";
+			    width: 10%;
+			    margin: 30px auto 0 auto;
+			}
+			/* H2 TAG AFTER LINE */
+			.yellow:after {
+				display: block;
+			    height: 2px;
+			    background-color: orange;
+			    content: " ";
+			    width: 10%;
+			    margin: 30px auto 0 auto;
+			}
+			/* H2 TAG AFTER LINE */
+			.white:after {
+				display: block;
+			    height: 2px;
+			    background-color: #fff;
+			    content: " ";
+			    width: 10%;
+			    margin: 30px auto 0 auto;
+			}
+			.parallax {
+				background-image: linear-gradient(
+			    	rgba(0,0,0,0.5),
+			    	rgba(0,0,0,0.5)),
+			    url('meh-2.jpg');
+			    height: auto; 
+			    background-attachment: fixed;
+			    background-size: cover;
+			    position: relative;
+			}
+			
+
+			/* NAVBAR */			
+			#navbar {
+			  	background-color: white;
+			  	position: fixed;
+			  	top: -70px;
+			  	width: 100%;
+			  	display: block;
+			  	transition: top 0.8s;
+			}
+			.shadow1 li a:hover {
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+				border-radius: 5px;
+				transition: 1s;
+			}
+
+
+			/* SCROLL */
+			.scroll {
+				text-align: center;
+				color: #000;
+				background: #fd9d2d;
+				font-size: 2rem;
+			}
+			#wss {
+				opacity: 0;
+				-webkit-transition: opacity 1.0s linear 0s;
+				transition: opacity 1.0s linear 0s;
+			}
+			.h2 {
+				text-align: center;
+				padding-top: 70px; 
+				padding-bottom: 30px;
+			}
+			.container-fluid {
+				padding-bottom: 50px;
+			}
+			/* MAIN PAGE */
+			#main {
+				background: linear-gradient(
+			  		rgba(0, 0, 0, 0.5),
+			  		rgba(0, 0, 0, 0.5)
+				), url('borito.jpg');
+			    height: 94%; 
+			    width: auto;
+			    background-position: center;
+			    background-repeat: no-repeat;
+			    background-attachment: fixed;
+			    background-size: cover;
+			}
+			@media only screen and (max-device-width: 1366px){
+				#main {
+					background-attachment: scroll;
+				}
+				.parallax {
+					background-attachment: scroll;
+				}
+			}
+			/* TEXT BOX */
+			.box {
+				text-align: center;
+				position: absolute;
+				top: 50%;
+			  	left: 50%;
+			  	-webkit-transform: translate(-50%, -50%);
+			  	transform: translate(-50%, -50%);
+			}
+			.box .h4 {
+				line-height: 5rem;
+				color: #fff;
+				font-size: 5rem;
+				font-family: 'Italianno', cursive;
+			}
+
+			/* SECTION 1 */
+			#section1 {
+				background: #fd9d2d;
+			}
+			.section1 img {
+				width: 50%;
+				margin-bottom: 5%;
+				border-radius: 10px; 
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			@media only screen and (max-device-width: 1366px){
+				.section1 img {
+					width: 75%;
+				}
+			}
+			.description {
+				padding:  2% 8%;
+			}
+
+			/* SECTION 2 */
+			#section2 {
+				color: white;
+			}
+			.column img {
+				width: 45%;
+				border-radius: 10px; 
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.column img:hover {
+				-webkit-transform: scale(1.02);
+				transition: 0.6s ease;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			#section2 p {
+				text-align: justify;
+			}
+			.caption {
+				margin-top: 2%;
+				margin-bottom: 5%;
+			}
+			.row > .column {
+			  	padding: 0 8px;
+			}
+
+			.row:after {
+			  	content: "";
+			  	display: table;
+			  	clear: both;
+			}
+
+			.column {
+			  	float: left;
+			  	width: 25%;
+			}
+
+			/* The Modal (background) */
+			.modal {
+		  		display: none;
+		  		position: fixed;
+		  		z-index: 1;
+		  		padding-top: 100px;
+		  		left: 0;
+		  		top: 0;
+		  		width: 100%;
+		  		height: 100%;
+		  		overflow: auto;
+		  		background-color: #000;
+			}
+
+			/* Modal Content */
+			.modal-content {
+			  	position: relative;
+			  	background-color: #fefefe;
+			  	margin: auto;
+			  	padding: 0;
+			  	width: 50%;
+			  	max-width: 1200px;
+			}
+
+			/* The Close Button */
+			.close {
+			  	color: #fff;
+			  	position: absolute;
+			  	top: 10px;
+			  	right: 25px;
+			  	font-size: 35px;
+			  	font-weight: bold;
+			}
+
+			.close:hover,
+			.close:focus {
+			  	color: #999;
+			  	text-decoration: none;
+			  	cursor: pointer;
+			}
+
+			.slides {
+			  	display: none;
+			}
+			.text {
+  				color: #fcb413;
+  				font-size: 15px;
+  				padding: 8px 12px;
+  				position: absolute;
+  				width: 100%;
+  				text-align: center;
+			}
+			.text p {
+				color: #fff;
+				text-align: justify;
+			}
+
+			.cursor {
+			  	cursor: pointer;
+			}
+
+			/* Next & previous buttons */
+			.prev,
+			.next {
+			  	cursor: pointer;
+			  	position: absolute;
+			  	top: 50%;
+			  	width: auto;
+			  	padding: 16px;
+			  	margin-top: -50px;
+			  	color: #fff;
+			  	font-weight: bold;
+			  	font-size: 20px;
+			  	transition: 0.6s ease;
+			  	border-radius: 0 3px 3px 0;
+			  	user-select: none;
+			  	-webkit-user-select: none;
+			}
+
+			/* Position the "next button" to the right */
+			.next {
+			  	right: 0;
+			  	border-radius: 3px 0 0 3px;
+			}
+
+			/* On hover, add a black background color with a little bit see-through */
+			.prev:hover,
+			.next:hover {
+			 	background-color: rgba(0, 0, 0, 0.8);
+			}
+
+			.demo {
+			  	opacity: 0.6;
+			}
+
+			.active,
+			.demo:hover {
+			  	opacity: 1;
+			}
+
+			/* section 3 */
+			#section3 {
+				background: #767581;
+				color: #fff;
+			}
+			#section3 .author {
+				text-align: right;
+				font-size: 1.2rem;
+			}
+			#section3 .card {
+				width: 80%;
+				height: 60%;
+				padding: 25px;
+				margin-bottom: 80px;
+				background: rgba(0,0,0,0);
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			.carousel span {
+				font-size: 3rem;
+			}
+			.carousel-indicators li {
+  				width: 10px;
+  				height: 10px;
+  				border-radius: 100%;
+			}
+
+			/* SECTION 4 */
+			#section4 {
+				background: #fd9d2d;
+				color: #000;
+			}
+			form {
+				width: 75%;
+			}
+			@media only screen and (max-device-width: 1366px){
+				form {
+					width: 90%;
+				}
+			}
+
+			#section4 button {
+				background: #575564; 
+				color: #fff;
+				box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+			}
+			#section4 button:hover {
+				-webkit-transform: scale(1.05);
+				-webkit-transition: .5s;
+				box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2), 0 10px 26px 0 rgba(0, 0, 0, 0.19);
+			}
+
+			/* section 5 */
+			.table a {
+				color: #fff;
+				text-align: center;
+			}
+
+			/* footer */
+			#contact {
+				background: #575564;
+			}
+
+			ion-icon:hover {
+				opacity: .5;
+				-webkit-transform: scale(1.3);
+				-webkit-transition: 1s;
+				transform: scale(1.3);
+				transition: 1s;
+			}
+
+	
+		</style>
+
+		<script type="text/javascript">
+			// Scroll text
+			var wss_i = 0;
+
+			var wss_array = ['Görgess','a további','tartalomért!'];
+
+			var wss_elem;
+
+			function wssNext(){
+				wss_i++;
+				wss_elem.style.opacity = 0;
+				if (wss_i > (wss_array.length -1)) {
+					wss_i = 0;
+				}
+				setTimeout("wssSlide()",1000);
+			}
+
+			function wssSlide(){
+				wss_elem.innerHTML = wss_array[wss_i];
+				wss_elem.style.opacity = 1;
+				setTimeout("wssNext()",2000);
+			}
+		</script>
+	</head>
+
+	<body>
+
+		<!-- MAIN-PAGE -->
+		<section id="main" class="img-fluid">
+
+			<!-- NAVBAR SECTION-->
+			<nav id="navbar" class="navbar navbar-expand-md navbar-light fixed-top">	
+
+						<button class="navbar-toggler ml-auto" type="button" data-toggle="collapse" data-target="#myNavbar">
+							<span class="navbar-toggler-icon"></span>
+						</button>
+
+					<div class="collapse navbar-collapse" id="myNavbar">
+
+						<a class="navbar-brand ml-5" href="#main">
+							<img src="meh-1.png" alt="Logo" style=" width:40px; height:40px">
+						</a>
+
+						<ul class="navbar-nav ml-auto shadow1">
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section1">Bemutatkozás</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section2">Termékeim</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section3">Vélemények</a>
+							</li>
+							<li class="nav-item mr-2">
+								<a class="nav-link" href="#section4">Rendelés</a>
+							</li>						
+						</ul>
+					</div>
+
+			</nav>
+			<!-- NAVBAR SECTION END -->
+
+	    	<!-- TEXT-BOX -->
+			<div class="box">
+
+				<h4 class="h4">Bánhegyi Roland</h4>
+				<h4 class="h4">méztermelő</h4>
+
+			</div>
+			<!-- TEXT-BOX END -->				  
+			
+		</section>
+		
+	<!-- MAIN-PAGE END-->
+
+	<!-- SCROLL -->
+
+	<div class="container-fluid-1 scroll">
+		<span id="wss"></span>
+	</div>
+
+		<script type="text/javascript">
+
+			wss_elem = document.getElementById("wss");
+			wssSlide();
+
+		</script>
+				
+	<!-- SCROLL END -->
+
+	<!-- SECTION 1 -->
+
+		<!-- Bemutatkozás -->
+
+		<section id="section1" class="container-fluid">
+			
+			<h2 class="h2 black">Bemutatkozás</h2>
+			
+			<div class="row">
+
+				<div class="col-12 col-md-10 text-justify mx-auto section1">
+
+		        	<img src="banhegyi-16.jpeg" class="mx-auto d-flex img-fluid" >
+
+          			<p class="px-5">A 35 éves, technikus végzettségű tűzoltó 2 éve foglalkozik méhekkel, jelenleg 21 családja van. Nemcsak nagybátyja, de már dédnagyapja is méhészkedett. Kezdő méhészként több tapasztalatra vágyik. Tervei között szerepel, hogy a mecseknádasdi borászokkal jó munkakapcsolatot alakítson ki.<br>Legnagyobb sikerének azt tartja, ha jól betelelteti, és nem pusztulnak el a méhek. A Mecseki Mézes Körút 2014. szeptember 20-án, Borjádon megtartott mézminősítő versenyén a AKÁC méze ARANY minősítést kapott.<br>A bemutatóhelyet a település szélén álló présház szép udvarán alakítja ki. A hangulatos, nagy diófa árnyékot ad, ott le lehet ülni, kerti bútorok állnak rendelkezésre. A kert fölött van egy akácos, ott találhatók a méhek, ahonnan szép kilátás nyílik a településre.</p>	
+
+          		</div>
+
+			</div>
+
+		</section>
+
+		<section class="container-fluid" style="color: white; background: #767581">
+
+			<h2 class="h2 yellow">Méhek és a méz</h2>
+
+			<!-- Ikonok, leírás -->
+			<div class="row description">
+
+				<div class="col-10 col-md-4 text-center mx-auto">						
+					<img src="bee-1.png" class="img-fluid" style="width: 60px; height: 60px; background:; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5%; border-radius: 5px"><br>
+					<p class="text-center">Méhek</p>
+					<p class="text-justify">Kicsit sem túlzó kijelentés, hogy méhek nélkül mi sem maradhatnánk sokáig a Föld bolygón. Ugyanis a táplálékul szolgáló növényeink nagy részének a beporzását ezek a kis szorgos rovarok végzik.</p> 
+				</div>
+
+				<div class="col-10 col-md-4 text-center mx-auto">
+					<img src="honey-1.png" class="img-fluid" style="width: 60px; height: 60px; background:; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5%; border-radius: 5px"><br>
+					<p class="text-center">Méz</p>
+					<p class="text-justify">Igen sok terméket szolgáltatnak a számunkra, melyek nem csak finomak, de rendkívül egészségesek is. A méhek által előállított termékek közül a méz a legismertebb.</p>
+				</div>
+
+				<div class="col-10 col-md-4 text-center mx-auto">
+					<img src="heart-1.png" class="img-fluid" style="width: 60px; height: 60px; background:; box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); margin-bottom: 5%; border-radius: 5px"><br>
+					<p class="text-center">Egészség</p>
+					<p class="text-justify">A méz kiváló természetes édesítőszer, amit akár a cukorbetegek is fogyaszthatnak. Ugyanakkor a fogyókúrázóknak sem kell lemondjanak az édességekről, hiszen a mézzel készült nyalánkságokkal bátran „bűnözhetnek”.</p>
+				</div>
+
+			</div>
+
+		</section>
+			
+		
+
+		<!-- SECTION 1 END -->
+
+		<!-- PARALLAX -->
+
+		<div class="parallax img-fluid">
+
+			<!-- SECTION 2 -->
+
+			<section id="section2" class="container-fluid">
+
+				<h2 class="h2 yellow">Termékek</h2>
+
+				<div class="row">
+
+					<div class="col-12 col-md-10 text-justify mx-auto column">
+
+			        	<img src="banhegyi-3.jpeg" class="mx-auto d-flex img-fluid hover-shadow cursor" onclick="openModal();currentSlide(1)">
+			        	<p class="text-center mt-2">Kattints a képre a részletekért!</p>
+
+			        </div>
+
+			    </div>
+
+			    <div id="myModal" class="modal">
+
+				  	<span class="close cursor" onclick="closeModal()">&times;</span>
+
+				  	<div class="modal-content">
+
+				    	<div class="slides">
+				      		<img src="banhegyi-12.jpeg" style="width:100%">
+				      		<div class="text">Akác méz - 2000ft/kg.<p>Az akácméz íze lágy és kellemes, ezért kiváló az ételek és italok ízesítésére. Nehezen kristályosodik, vagyis sokáig folyékony marad. Az akácméz nagyon hatékony lehet a gyomorsav túltengés és köhögés ellen is.</p></div>
+				    	</div>
+				    	<div class="slides">
+				      		<img src="banhegyi-19.jpeg" style="width:100%">
+				      		<div class="text">Hárs méz - 2200ft/kg.<p>A hársméz igen pikáns ízű, gyakran mézpakolások alapjául is szolgál. Erősítheti immunrendszerünket, így télen kimondottan ajánlott fogyasztása.</p></div>
+				    	</div>
+				    	<div class="slides">
+				      		<img src="banhegyi-15.jpeg" style="width:100%">
+				      		<div class="text">Repce méz - 1500ft/kg.<p>A repceméz nagyon krémes, mely gyorsan képes beopálosodni. Nagyon erős fertőtlenítő és gyulladáscsökkentő hatással bír, de gyomorsavtúltengés ellen is kiváló.</p></div>
+				    	</div>				    	
+				    	<div class="slides">
+				      		<img src="banhegyi-18.jpeg" style="width:100%">
+				      		<div class="text">Napraforgó méz - 1800ft/kg.<p>A napraforgóméz kiváló lehet az italok ízesítésére. Nagyjából egy-két hét alatt képes bekristályosodni. A napraforgóméz nagyon jó a gyomorsav túltengés ellen és fertőtlenítő, gyulladáscsökkentő hatással is bír.</p></div>
+				    	</div>
+				    	<div class="slides">
+				      		<img src="gesztenyemez.jpg" style="width:100%">
+				      		<div class="text">Gesztenye méz - 2500ft/kg.<p>A gesztenye méz (szelídgesztenye méz) egyike a legkülönlegesebb mézeknek. A gesztenyeméz fogyasztása kedvezően hathat a vérszegénység kezelésére. Kimerültség ellen és levertség esetén is hatásos.</p></div>
+				    	</div>
+
+				    	<a class="prev" onclick="plusSlides(-1)" style="color: #FFF">&#10094;</a>
+					    <a class="next" onclick="plusSlides(1)" style="color: #FFF">&#10095;</a>
+
+				    </div>
+
+				</div>
+
+			</section>
+
+			<!-- SECTION 2 END -->
+
+		</div>
+
+		<!-- PARALLAX END -->
+
+		<!-- SECTION 3 -->
+
+		<section id="section3" class="container-fluid">
+
+			<h2 class="h2 text-center yellow">Vásárlói vélemények.</h2>
+
+			<!-- carousel -->
+
+				<div class="container slide-container"> 
+					
+					<div class="carousel slide" id="demo" data-ride="carousel" data-interval="5000">
+
+						<!-- indikátorok/gördítő gombok -->
+
+						<ul class="carousel-indicators">
+							<li data-target="#demo" data-slide-to="0" class="active"></li>
+							<li data-target="#demo" data-slide-to="1"></li>
+							<li data-target="#demo" data-slide-to="2"></li>
+							<li data-target="#demo" data-slide-to="3"></li>
+							<li data-target="#demo" data-slide-to="4"></li>
+						</ul>
+
+						<!-- fő egység -->
+
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="card mx-auto" style="background: #83828D">
+				  					<p style="font-style: italic"><span>&#750;</span> A méz nagyon finom! A kiszolgálás gyors és pontos. Ajánlani tudom mindenkinek!!</p>
+									<p class="author">- Takács Attila</p>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card mx-auto" style="background: #83828D">
+				  					<p style="font-style: italic"><span>&#750;</span> Mint mindig, most is minden rendben volt a rendeléssel és a kiszállítással is.</p>
+				  					<p class="author">- Kiss Orsi</p>
+				  				</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card mx-auto" style="background: #83828D">
+				  					<p style="font-style: italic"><span>&#750;</span> Nagyon jó ízűek a mézek. A legfinomabb a napraforgó íze, a kávémat ezzel édesítem.</p>
+				  					<p class="author">- Nagy Tamás</p>
+				  				</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card mx-auto" style="background: #83828D">
+				  					<p style="font-style: italic"><span>&#750;</span> Nagyon szeretjük a mézüket, különlegesen finom és kitűnő minőségű magyar termék.</p>
+				  					<p class="author">- Szabó Győző</p>
+				  				</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card mx-auto" style="background: #83828D">
+				  					<p style="font-style: italic"><span>&#750;</span> További sikeres munkát kívánunk Önöknek és szorgos méheiknek!</p>
+				  					<p class="author">- Ábrahám Péter</p>
+				  				</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			<!-- carousel VÉGE -->
+
+		</section>
+
+		<!-- SECTION 3 END -->
+
+		<!-- SECTION 4 -->
+
+		<section id="section4" class="container-fluid">
+			
+			<h2 class="h2 black">Elérhetőségeim</h2>
+
+			<div class="row">
+
+				<div class="col-10 col-md-3 mx-auto">
+					<p class="text-center">Címem:</p>
+					<p class="text-center">Mecseknádasd, Petőfi u. 76.</p>
+				</div>
+				<div class="col-10 col-md-3 mx-auto">
+					<p class="text-center">Email:</p>
+					<p class="text-center">banhegyi@gmail.com</p>
+				</div>
+				<div class="col-10 col-md-3 mx-auto">
+					<p class="text-center">Telefonszámom:</p>
+					<p class="text-center">+36-70/123-4567</p>
+				</div>
+
+			</div>
+
+			<div class="row">
+
+				<button class="col-md-3 col-10 mx-auto" type="button" style="padding: 10px; border: none; border-radius: 5px; margin-top: 2%"><a style="color: white; text-decoration: none;" href="https://uj.utvonalterv.hu/#!l=0,1!p=14/46.2200/18.4701">Kattints az útvonal tervezéshez!</a></button>
+				<button class="col-md-3 col-10 mx-auto" type="button" style="padding: 10px; border: none; border-radius: 5px; margin-top: 2%"><a style="color: white; text-decoration: none;" href="mailto:banhegyi@gmail.com">Kattints az üzenet küldéshez!</a></button>
+				<button class="col-md-3 col-10 mx-auto" type="button" style="padding: 10px; border: none; border-radius: 5px; margin-top: 2%"><a style="color: white; text-decoration: none;" href="tel: +36 70 123 4567">Kattints a telefonhíváshoz!</a></button>
+				
+			</div>
+
+			<div class="table-responsive" style="height: 10%; margin-top: 2%;">
+				<table class="table table-borderless">
+						<tr>
+							<td style="width: 33%; text-align: center;"><a style="color: #000; text-decoration: none;" href="https://www.xn--adatvdelem-f7a.hu/jogszabalyok/">Adatvédelmi tájékoztató!</a></td>
+							<td style="width: 33%; text-align: center;"><a style="color: #000; text-decoration: none;" href="#">Vásárlási információk!</a></td>
+							<td style="width: 33%; text-align: center;"><a style="color: #000; text-decoration: none;" href="https://www.posta.hu/kuldemeny_kuldese/mpl_postacsomag">Szállítási információk!</a></td>
+						</tr>
+				</table>
+			</div>
+
+		</section>
+
+		<!-- SECTION 4 END -->
+
+		<!-- FOOTER -->
+
+		<section id="contact" class="container-fluid py-3">
+
+			<nav class="navbar navbar-expand-sm navbar-dark">
+
+				<!-- footer navi balra -->
+
+				<ul class="navbar-nav mr-auto">
+	    			<li class="nav-item mr-2">
+	      				<a class="nav-link" href="#">About us</a>
+	    			</li>
+	    			<li class="nav-item mr-2">
+	      				<a class="nav-link" href="#">Blog</a>
+	    			</li>
+	    			<li class="nav-item mr-2">
+	      				<a class="nav-link" href="#">Press</a>
+	    			</li>
+	    			<li class="nav-item mr-2">
+	      				<a class="nav-link" href="#">Mobile app</a>
+	    			</li>
+	  			</ul>
+
+	  			<!-- footer navi jobbra -->
+	  			<ul class="navbar-nav ml-auto">
+	  				<li class="nav-item mr-3"> 
+	  					<a class="nav-link" href="https://facebook.com"><ion-icon name="logo-facebook" size="large"></ion-icon></a>
+	  				</li>
+	  				<li class="nav-item mr-3"> 
+	  					<a class="nav-link" href="https://mail.com"><ion-icon name="mail" size="large"></ion-icon></a>
+	  				</li>
+	  				<li class="nav-item mr-3"> 
+	  					<a class="nav-link" href="https://linkedin.com"><ion-icon name="logo-linkedin" size="large"></ion-icon></a>
+	  				</li>
+	  				<li class="nav-item mr-3"> 
+	  					<a class="nav-link" href="https://instagram.com"><ion-icon name="logo-instagram" size="large"></ion-icon></a>
+	  				</li>
+	  			</ul>
+
+			</nav> 
+
+			<p class="text-center py-3">Copyright © 2018 by Zsolt</p>
+
+		</section>
+
+		<!-- FOOTER END -->
+
+		<script type="text/javascript">
+			// NAVBAR - When the user scrolls down 400px from the top of the document, slide down the navbar
+			window.onscroll = function() {scrollFunction()};
+
+			function scrollFunction() {
+			    if (document.body.scrollTop > 400 || document.documentElement.scrollTop > 400) {
+			        document.getElementById("navbar").style.top = "0";
+			    } else {
+			        document.getElementById("navbar").style.top = "-70px";
+			    }
+			}
+			// NAVBAR - scrolling function
+			$(document).ready(function(){
+			  // Add scrollspy to <body>
+			  $('body').scrollspy({target: ".navbar", offset: 50});   
+
+			  // Add smooth scrolling on all links inside the navbar
+			  $("#myNavbar a").on('click', function(event) {
+			    // Make sure this.hash has a value before overriding default behavior
+			    if (this.hash !== "") {
+			      // Prevent default anchor click behavior
+			      event.preventDefault();
+
+			      // Store hash
+			      var hash = this.hash;
+
+			      // Using jQuery's animate() method to add smooth page scroll
+			      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+			      $('html, body').animate({
+			        scrollTop: $(hash).offset().top
+			      }, 800, function(){
+			   
+			        // Add hash (#) to URL when done scrolling (default click behavior)
+			        window.location.hash = hash;
+			      });
+			    }  // End if
+			  });
+			});
+
+			//SECTION2 
+			function openModal() {
+			  document.getElementById('myModal').style.display = "block";
+			  document.getElementById('navbar').style.display = 'none';
+			}
+
+			function closeModal() {
+			  document.getElementById('myModal').style.display = "none";
+			  document.getElementById('navbar').style.display = 'block';
+			}
+
+			var slideIndex = 1;
+			showSlides(slideIndex);
+
+			function plusSlides(n) {
+			  showSlides(slideIndex += n);
+			}
+
+			function currentSlide(n) {
+			  showSlides(slideIndex = n);
+			}
+
+			function showSlides(n) {
+			  var i;
+			  var slides = document.getElementsByClassName("slides");
+			  var dots = document.getElementsByClassName("demo");
+			  var captionText = document.getElementById("caption");
+			  if (n > slides.length) {slideIndex = 1}
+			  if (n < 1) {slideIndex = slides.length}
+			  for (i = 0; i < slides.length; i++) {
+			      slides[i].style.display = "none";
+			  }
+			  for (i = 0; i < dots.length; i++) {
+			      dots[i].className = dots[i].className.replace(" active", "");
+			  }
+			  slides[slideIndex-1].style.display = "block";
+			  dots[slideIndex-1].className += " active";
+			  captionText.innerHTML = dots[slideIndex-1].alt;
+			}
+
+			// CONTACT SECTION
+			// checked to form
+			function myFunction() {
+			    var checkBox = document.getElementById("myCheck");
+			    var text = document.getElementById("text");
+			    if (checkBox.checked == true){
+			        document.getElementById("text").innerHTML = "Nem kérek hírlevelet!";
+			        // text.style.display = "block";
+			    } else {
+			        document.getElementById("text").innerHTML = "Kérek hírlevelet!";
+			       // text.style.display = "none";
+			    }
+			}
+
+		</script>
+
+	</body>
+</html>
+
+
+
+
+
+
+
